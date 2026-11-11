@@ -109,3 +109,24 @@ if (userName != "" && userAge >= 18 && userIsBlocked === false) {
 } else {
   console.log("Unable to log in.");
 }
+
+/******************************************************************************
+OPPGAVE 5
+
+Lag en variabel kalt userTitle og sett innholdet til å være:
+- "Mr." hvis userMale er true, eller
+- "Mrs." hvis userMale er false.
+
+Bruk en ternary conditional for dette:
+
+const variabel = betingelse ? "hvis sann" : "hvis usann";
+
+Prøv å endre userMale til både true og false og bruk console.log for å sjekke
+at betingelsen din fungerer som den skal.
+******************************************************************************/
+
+const userMale = false;
+
+// Skriv koden for oppgave 5 her
+const userGender = userMale ? "Mr." : "Mrs.";
+console.log(userGender);
