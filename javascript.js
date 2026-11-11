@@ -96,7 +96,13 @@ let userIsBlocked = false;
 let goToPage = "";
 
 // Skriv koden for oppgave 4 her
-if (userName !== "" && userAge >= 18 && userIsBlocked === false) {
+if (userIsLoggedIn === true) {
+  console.log("Something went wrong");
+}
+if (userIsBlocked === true) {
+  console.log("Something went wrong");
+}
+if (userName != "" && userAge >= 18 && userIsBlocked === false) {
   userIsLoggedIn = true;
   goToPage = "/home";
   console.log("Welcome " + userName + "! You are now logged in.");
